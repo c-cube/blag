@@ -7,7 +7,7 @@ Slug: frist-post
 Hi there, here is the first post on this [blag](http://xkcd.com/148/ blag)! There will (or should, at least) be posts on technical
 subjects by several authors : 
 
-- Vincent Barrielle, aka [_Shuba_](http://shuba.cedeela.fr/);
+- [_Shuba_](http://shuba.cedeela.fr/);
 - Vincent Doba;
 - [Simon Cruanes](http://cedeela.fr/~simon/).
 
