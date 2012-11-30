@@ -1,4 +1,4 @@
-Author: Simon
+Author: simon
 Date: 29-11-2012
 Title: Debug using DOT
 Tags: dot,debug,logic,proof
@@ -7,7 +7,7 @@ Slug: debug-with-dot
 # Rationale
 
 I'm starting a PhD on first-order automated theorem proving, which is
-the reason I'm writing an [experimental theorem prover](http://github.com/c-cube/zipperposition/ zipperposition on github) in OCaml. Theorem provers are
+the reason I'm writing an [experimental theorem prover](http://github.com/c-cube/zipperposition/ "zipperposition on github") in OCaml. Theorem provers are
 full of complicated algorithms (that I plan to write on later), and my
 usual techniques for debugging are twofold:
 
@@ -21,7 +21,7 @@ The second technique, also known as _printf debugging_, is quite powerful
 (especially since OCaml does not feature a great debugger as an
 alternative). However, text is not great for representing structured
 data, and especially **graphs**. Here is where I bring
-[DOT](http://graphviz.org dot) into play.
+[DOT](http://graphviz.org "dot page") into play.
 
 # A first example
 
@@ -38,7 +38,7 @@ text and such images, let us take an example from logic:
                           ((equ(C, B) & equ(B, A)) => equ(C, A))).
 
 This is a logic problem, expressed in the
-[TPTP](http://www.cs.miami.edu/~tptp/ TPTP main page) format
+[TPTP](http://www.cs.miami.edu/~tptp/ "TPTP main page") format
 (a standard format for first-order logic problems). It is composed of
 an _axiom_, that defines equality `equ` using the notion of membership.
 Then, a _conjecture_ (the goal to prove) states that equality is
@@ -129,7 +129,7 @@ It describes a [DAG](http://en.wikipedia.org/wiki/Directed_acyclic_graph) of
 inferences, that deduce clauses from other clauses, until the empty clause
 is found (which may never occur, first-order logic being undecidable).
 
-Now the option `-dot proof.dot` produces [this file](images/proof.dot DOT file); once translated using DOT,
+Now the option `-dot proof.dot` produces [this file](images/proof.dot "DOT file"); once translated using DOT,
 
     $ dot -Tsvg proof.dot > proof.svg
 

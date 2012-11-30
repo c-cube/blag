@@ -1,4 +1,4 @@
-Author: Simon
+Author: simon
 Date: 29-11-2012
 Title: Frist post
 Tags: emptyset,frist
