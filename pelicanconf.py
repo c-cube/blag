@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = u"Simon, Vincent & Vincent"
+AUTHOR_URL = u"author/{name}.html"
 SITENAME = u"the blAAAAAAAg"
 SITEURL = 'http://cedeela.fr'
 
