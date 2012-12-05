@@ -1,5 +1,5 @@
 Author: Shuba
-Date: 29-11-2012
+Date: 05-12-2012
 Title: The inside of a curve
 Tags: topology,graphics,2D
 Slug: inside-a-curve
@@ -51,7 +51,8 @@ As we've seen, crossing the boundary of the curve means going from the inside to
 the outside (and vice versa). So if we pick a half-line starting at our query
 point, and count its intersections with the curve, we have our answer. If the
 number of intersections is odd, the query point is in the curve, if it's even
-we're outside the curve.
+we're outside the curve. That number of intersections is known as the winding
+number.
 
 <img src="images/curve_line_intersections.png" width=700> 
 
@@ -66,6 +67,15 @@ find the roots of a polynomial. Cubic Bézier curves are widespread, and
 polynomials of degree 3 can be solved analytically.
 
 # Self intersecting curves
+
+Unfortunately, curves might self intersect, and there's no clear answer to how
+to interpret the winding number. There are two competing rules, the _even odd
+fill rule_, which simply extents the previous approach, and the _non zero
+fill rule_, which considers oriented intersections between the curve and the
+line, counting one orientation positive and the other negative. Points with non
+zero winding numbers are inside the curve.
+
+I'll get back on these fill rules in another post.
 
 
 
