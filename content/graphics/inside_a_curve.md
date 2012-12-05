@@ -45,6 +45,7 @@ one of which has no finite bounds. The bounded component is the interior of the
 curve.
 
 # Let's shoot lines
+$ ax + by +c $
 
 
 
