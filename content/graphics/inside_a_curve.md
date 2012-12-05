@@ -40,12 +40,32 @@ its end belong to the same connected component.
 # Inside a curve
 
 We can now define the inside of a curve. Any[^mathematicians] closed curve
-with no self intersections splits the plane into at two closed components,
-one of which has no finite bounds. The bounded component is the interior of the
-curve.
+with no self intersections (a simple closed curve) splits the plane into at two
+closed components, one of which has no finite bounds. The bounded component is
+the interior of the curve.
 
 # Let's shoot lines
-$ ax + by +c $
+
+Now it's easy to devise a method to tell whether a point lies inside a curve.
+As we've seen, crossing the boundary of the curve means going from the inside to
+the outside (and vice versa). So if we pick a half-line starting at our query
+point, and count its intersections with the curve, we have our answer. If the
+number of intersections is odd, the query point is in the curve, if it's even
+we're outside the curve.
+
+<img src="images/curve_line_intersections.png" width=700> 
+
+# Intersecting a curve with a line
+
+Ok, that's great, but how do we compute these intersections? It turns out there
+is a convenient analytical approach. Lines are represented by their equation
+$ ax + by +c = 0 $. So given any paramteric curve $C(t) = (x(t), y(t))$, we only
+need to find all t such that $ax(t) + by(t)+ c = 0$. This method is particularly
+interesting if, as is often the cas, C is a Bézier curve, which means we need to
+find the roots of a polynomial. Cubic Bézier curves are widespread, and
+polynomials of degree 3 can be solved analytically.
+
+# Self intersecting curves
 
 
 
