@@ -6,6 +6,8 @@ AUTHOR_URL = u"author/{name}.html"
 SITENAME = u"the blAAAAAAAg"
 SITEURL = 'http://cedeela.fr'
 
+DISQUS_SITENAME = "cedeelafr"
+
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'
