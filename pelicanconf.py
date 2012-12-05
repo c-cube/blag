@@ -25,4 +25,4 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 10
 
 # Extensions
-MD_EXTENSIONS = ['latex']
+MD_EXTENSIONS = ['latex','footnotes']
