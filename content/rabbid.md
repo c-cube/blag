@@ -1,6 +1,6 @@
-Author: Shuba
+Author: shuba
 Date: 10-12-2012
-Title: An this...
+Title: And this...
 Tags: random
 Slug: and-this
 

@@ -1,10 +1,10 @@
-Author: Shuba
+Author: shuba
 Date: 05-12-2012
 Title: The inside of a curve
 Tags: topology,graphics,2D
 Slug: inside-a-curve
 
-Hi, I am Shuba, and I'll be using this blog to dicuss various computer graphics
+Hi, I am shuba, and I'll be using this blog to dicuss various computer graphics
 topics I find interesting. I might also disgress on C++, which is my main
 programming language.
 

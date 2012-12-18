@@ -1,4 +1,4 @@
-Author: Shuba
+Author: shuba
 Date: 18-12-2012
 Title: Go, C++!!
 Tags: c++11, concurrency, go
@@ -144,6 +144,7 @@ This enables this very concise Hello World implementation:
 
 Notice that I read the return values of the async calls, even though they are
 void:
+
       auto b = std::async( std::launch::async, [&]...
 
 This is because futures join when their destructors are called, which are called
