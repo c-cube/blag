@@ -27,7 +27,7 @@ containing the points of the plane that don't belong to C. The curve defines a
 region if and only if S is not connex. The following picture shows a curve C
 which does not define a region, and a curve D which defines one.
 
-.. image:: images/curve_region.png
+.. image:: ../images/curve_region.png
     :width: 700px
     :alt: region
 
@@ -38,7 +38,7 @@ exterior and vice versa. But this can not be achieved with an open curve, as the
 following picture shows: the red arrow crosses the curve but both its start and
 its end belong to the same connected component.
 
-.. image:: images/curve_no_valid_interior.png
+.. image:: ../images/curve_no_valid_interior.png
     :width: 350px
     :alt: curve with no valid interior
 
@@ -61,7 +61,7 @@ number of intersections is odd, the query point is in the curve, if it's even
 we're outside the curve. That number of intersections is known as the winding
 number.
 
-.. image:: images/curve_line_intersections.png
+.. image:: ../images/curve_line_intersections.png
     :alt: intersection with curves
     :width: 700px
 
