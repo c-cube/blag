@@ -24,5 +24,8 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 10
 
+THEME = u"notmyidea"
+
 # Extensions
-MD_EXTENSIONS = ['latex','footnotes']
+MD_EXTENSIONS = ['footnotes']
+#MD_EXTENSIONS = ['latex','footnotes']
