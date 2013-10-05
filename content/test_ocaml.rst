@@ -12,4 +12,4 @@ Test for syntax coloring
    let rec f x = x + 1 in
    Printf.printf "hello world %d\n" (f 41);;
 
-
+I like equations :math:`f(x) = x^{2}`

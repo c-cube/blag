@@ -154,7 +154,7 @@ DOT is remarquably easy to generate for simple graphs (avoiding
 complicated nodes, or subgraphs). The description is just a list of
 nodes and arrows between nodes.
 
-.. code-block:: dot
+::
 
     node_6 [label="[•∀(contains(sk1, •0) = contains(sk2, •0))*]",shape=box,style=filled];
     node_6 -> node_3 [label="elim"];
