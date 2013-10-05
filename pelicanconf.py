@@ -13,14 +13,22 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 
 # Blogroll
-LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
-          ('Python.org', 'http://python.org'),
-          ('Jinja2', 'http://jinja.pocoo.org'),
-         )
+LINKS =   (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
+           ('OCaml reddit', 'http://www.reddit.com/r/ocaml/'),
+           ('Simon\'s github', 'https://github.com/c-cube'),
+           ('Gagallium (Gallium\'s blog)', 'http://gallium.inria.fr/blog/'),
+           ('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
+          )
+#LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
+#          ('Python.org', 'http://python.org'),
+#          ('Jinja2', 'http://jinja.pocoo.org'),
+#         )
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+         )
+#SOCIAL = (('You can add links in your config file', '#'),
+#          ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 10
 
