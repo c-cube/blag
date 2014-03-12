@@ -6,4 +6,4 @@ Slug: and-this
 
 # ... is how you were born
 
-<img src="images/rabbid_birth.jpg" width=700> 
+<img src="/images/rabbid_birth.jpg" width=700> 
