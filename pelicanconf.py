@@ -32,7 +32,9 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
-THEME = u"notmyidea"
+#THEME = u"notmyidea"
+#THEME = u"pelican-themes/subtle"
+THEME = u"pelican-themes/tuxlite_zf"
 
 # Extensions
 MD_EXTENSIONS = ['footnotes']
