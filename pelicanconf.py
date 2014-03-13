@@ -6,7 +6,8 @@ AUTHOR_URL = u"author/{name}.html"
 SITENAME = u"the blAAAAAAAg"
 SITEURL = 'http://cedeela.fr'
 
-DISQUS_SITENAME = "cedeelafr"
+# bleh
+#DISQUS_SITENAME = "cedeelafr"
 
 TIMEZONE = 'Europe/Paris'
 
@@ -34,7 +35,10 @@ DEFAULT_PAGINATION = 10
 
 #THEME = u"notmyidea"
 #THEME = u"pelican-themes/subtle"
-THEME = u"pelican-themes/tuxlite_zf"
+THEME = u"theme"
+
+# commentaires
+ISSO_SERVER="http://isso.cedeela.fr"
 
 # Extensions
 MD_EXTENSIONS = ['footnotes']
