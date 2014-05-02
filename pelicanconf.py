@@ -6,6 +6,12 @@ AUTHOR_URL = u"author/{name}.html"
 SITENAME = u"the blAAAAAAAg"
 SITEURL = 'http://cedeela.fr'
 
+# rss and atom
+
+FEED_DOMAIN = SITEURL
+FEED_ATOM = 'atom'
+FEED_RSS = 'rss'
+
 # bleh
 #DISQUS_SITENAME = "cedeelafr"
 
