@@ -9,7 +9,7 @@ SITEURL = 'http://cedeela.fr'
 # rss and atom
 
 FEED_DOMAIN = SITEURL + "/feeds/"
-FEED_ALL_RSS = 'feeds/rss.xml'
+FEED_ALL_RSS = 'feeds/all.rss.xml'
 
 # bleh
 #DISQUS_SITENAME = "cedeelafr"
@@ -23,7 +23,6 @@ LINKS =   (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
            ('OCaml reddit', 'http://www.reddit.com/r/ocaml/'),
            ('Simon\'s github', 'https://github.com/c-cube'),
            ('Gagallium (Gallium\'s blog)', 'http://gallium.inria.fr/blog/'),
-           ('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
           )
 #LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
 #          ('Python.org', 'http://python.org'),
