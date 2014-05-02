@@ -64,6 +64,8 @@
         <ul class="side-nav">
             <li><a href="{{ SITEURL }}/archives.html">Archives</a>
             <li><a href="{{ SITEURL }}/tags.html">Tags</a>
+            <li><a href="{{ FEED_ALL_RSS }}">RSS feed</a></li>
+            <li><a href="{{ FEED_ALL_ATOM }}">atom feed</a></li>
             {% if FEED_RSS %}
             <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" rel="alternate">Atom feed</a></li>
             {% endif %}
@@ -114,7 +116,4 @@
             </div>
             </div>
     </div>
-
-    <p><a href="{{ FEED_ALL_RSS }}">RSS feed</a></p>
-    <p><a href="{{ FEED_ALL_ATOM }}">atom feed</a></p>
 </footer>
