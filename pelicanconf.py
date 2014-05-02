@@ -8,9 +8,8 @@ SITEURL = 'http://cedeela.fr'
 
 # rss and atom
 
-FEED_DOMAIN = SITEURL
-FEED_ATOM = 'atom'
-FEED_RSS = 'rss'
+FEED_DOMAIN = SITEURL + "/feeds/"
+FEED_ALL_RSS = 'feeds/rss.xml'
 
 # bleh
 #DISQUS_SITENAME = "cedeelafr"
