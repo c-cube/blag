@@ -1,6 +1,5 @@
 :author: simon
 :date: 11-6-2014
-:status: draft
 :title: Batch Operations on Collections
 :tags: ocaml,flat_map,collections,performance,batch,gadt
 
@@ -83,20 +82,21 @@ merges two operations (for instance ``map f >>> map g`` into ``map (f . g)``).
 GADTs are used to represent the chain of compositions.
 
 To actually compute the result of an operation on a proper collection,
-the ``apply`` function should be used. For instance, if ``BA`` is an
+the ``apply`` function should be used. For instance, with an
 instance of ``CCBatch.Make`` on arrays:
 
 .. code-block:: ocaml
 
     # let f x = x+1 ;;
     # let g x = if x mod 2 = 0 then Some (x*10) else None ;;
-    # let op = BA.(map f >>> filter_map g) ;;
-    op : (int,int) BA.op = <abstr>
-    # BA.apply op [| 1; 2; 3; 4  \|] ;;
-    - : int array = [| 20; 40 \|]
+    # let op = map f >>> filter_map g ;;
+    op : (int,int) op = <abstr>
+    # BA.apply op [| 1; 2; 3; 4 |] ;;
+    - : int array = [| 20; 40 |]
 
 In this case, the actual operation performed on the array
-should basically be ``filter_map (fun x -> g (f x))``
+should basically be ``filter_map (fun x -> g (f x))``, which doesn't
+need any intermediate structure.
 
 Benchmark
 ---------
