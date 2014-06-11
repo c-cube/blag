@@ -81,6 +81,56 @@ that ``a >>> b`` first applies the operation ``a``, then the operation
 merges two operations (for instance ``map f >>> map g`` into ``map (f . g)``).
 GADTs are used to represent the chain of compositions.
 
+Internals
+^^^^^^^^^
+
+The internal representation of a chain of operations is based on GADTs.
+Composition is done through a ``_compose`` internal function that
+does some basic simplifications, like removing ``Id`` when required
+and right-parenthesing the composition operators.
+
+.. code-block:: ocaml
+
+  type (_,_) op =
+    | Id : ('a,'a) op
+    | Compose : ('a,'b) base_op * ('b, 'c) op -> ('a, 'c) op
+  and (_,_) base_op =
+    | Map : ('a -> 'b) -> ('a, 'b) base_op
+    | Filter : ('a -> bool) -> ('a, 'a) base_op
+    | FilterMap : ('a -> 'b option) -> ('a,'b) base_op
+    | FlatMap : ('a -> 'b t) -> ('a,'b) base_op
+
+  (* associativity: put parenthesis on the right *)
+  let rec _compose : type a b c. (a,b) op -> (b,c) op -> (a,c) op
+  = fun f g -> match f with
+    | Compose (f1, Id) -> Compose (f1, g)
+    | Compose (f1, f2) -> Compose (f1, _compose f2 g)
+    | Id -> g
+
+Then, optimization is done through a lengthy pattern-match (an excerpt
+of which follows):
+
+.. code-block:: ocaml
+
+  let _new_compose a b = Compose(a,b)
+
+  let rec _optimize_head
+  : type a b. (a,b) op -> (a,b) op optim_result
+  = fun op -> match op with
+    | Id -> Same Id
+    | Compose (Map f, Compose (Map g, cont)) ->
+        _new_compose (Map (fun x -> g (f x))) cont
+    | Compose (Map f, Compose (Filter p, cont)) ->
+        _new_compose
+          (FilterMap (fun x -> let y = f x in if p y then Some y else None)) cont
+    | Compose (Map f, Compose (FilterMap f', cont)) ->
+        _new_compose
+          (FilterMap (fun x -> f' (f x))) cont
+  (* ... *)
+
+Evaluation
+^^^^^^^^^^
+
 To actually compute the result of an operation on a proper collection,
 the ``apply`` function should be used. For instance, with an
 instance of ``CCBatch.Make`` on arrays:
