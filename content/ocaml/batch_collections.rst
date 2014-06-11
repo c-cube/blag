@@ -112,7 +112,11 @@ of which follows):
 
 .. code-block:: ocaml
 
-  let _new_compose a b = Compose(a,b)
+  type 'a optim_result =
+    | Same of 'a
+    | New of 'a
+
+  let _new_compose a b = New (Compose(a,b))
 
   let rec _optimize_head
   : type a b. (a,b) op -> (a,b) op optim_result
@@ -126,7 +130,9 @@ of which follows):
     | Compose (Map f, Compose (FilterMap f', cont)) ->
         _new_compose
           (FilterMap (fun x -> f' (f x))) cont
-  (* ... *)
+    (* ... *)
+    | _ -> Same op
+
 
 Evaluation
 ^^^^^^^^^^
