@@ -25,10 +25,10 @@ Batch
 
 We can still combine operations efficiently by making their composition explicit.
 I wrote a module, `CCBatch`_ (the implementation is
-`there <https://github.com/c-cube/ocaml-containers/blob/master/core/CCBatch.ml>`_)
+`there <https://github.com/c-cube/ocaml-containers/blob/fc3b6040f6c228eec911545c48bd67ca8d33b9ca/core/CCBatch.ml>`_)
 for this exact purpose.
 
-.. _`CCBatch`: https://github.com/c-cube/ocaml-containers/blob/master/core/CCBatch.mli
+.. _`CCBatch`: https://github.com/c-cube/ocaml-containers/blob/fc3b6040f6c228eec911545c48bd67ca8d33b9ca/core/CCBatch.mli
 
 The module is parametrized by a collection type, whose signature follows.
 A collection contains elements of type ``'a``, and provides a few
@@ -159,7 +159,7 @@ Benchmark
 
 Now the question is: does this actually bring more performance? To test
 this I wrote a
-`benchmark module <https://github.com/c-cube/ocaml-containers/blob/master/tests/bench_batch.ml>`_. It compares the performance of a chain of operations
+`benchmark module <https://github.com/c-cube/ocaml-containers/blob/fc3b6040f6c228eec911545c48bd67ca8d33b9ca/tests/bench_batch.ml>`_. It compares the performance of a chain of operations
 using several methods:
 
 #. regular composition ("``naive``")
