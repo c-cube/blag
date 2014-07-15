@@ -75,8 +75,8 @@ the combinators(!). I don't know of any equivalent so far,
 although some people already use combinators for printing
 functions [#printing]_ (which is a kind of serialization).
 
-.. _`Conv`: https://github.com/c-cube/ocaml-containers/blob/master/conv.mli
-.. _`Conv.ml`: https://github.com/c-cube/ocaml-containers/blob/master/conv.ml
+.. _`Conv`: https://github.com/c-cube/cconv/blob/0.1/cConv.mli
+.. _`Conv.ml`: https://github.com/c-cube/cconv/blob/0.1/cConv.ml
 .. _`Batteries Included`: http://ocaml-batteries-team.github.io/batteries-included/hdoc2
 
 Gory Details
