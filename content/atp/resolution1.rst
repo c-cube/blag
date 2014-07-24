@@ -2,7 +2,6 @@
 :date: 24-7-2014
 :title: Introduction to Automated Theorem Proving with Logtk
 :tags: ocaml,logic,proof,resolution,cnf,logtk
-:Status: draft
 
 My PhD work is centered around
 `automated theorem proving <http://en.wikipedia.org/wiki/Automated_theorem_proving>`_
