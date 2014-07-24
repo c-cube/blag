@@ -12,12 +12,24 @@ so this post is a crash course (but the program won't crash because
 I use ``OCaml``) on one of the most classic method to prove (some) theorems
 automatically. I named... *resolution*!
 
+The goal is to prove some (not too complicated) theorems automatically.
+In other words, we want a program that reads a bunch of axioms and a formula
+that we conjectured is a theorem following from the axioms,
+and then tries to produce a proof of the theorem. In practice it's almost always
+done by *refutation*: to prove that `Γ ⊢ F` (formula `F` is a theorem
+under axioms `Γ`), we try to deduce `⊥` (false) from `Γ, ¬F`). The
+applications for this kind of technology are multiple, but afaik
+the prominent one is *software veriication* — aims at formally proving that
+a program satisfies a specification ("not crashing" is a good start).
+There has been a lot of research in this area for decades, but the problem
+is extremely hard (only *semi-decidable*: you will find a solution eventually
+if the problem is a theorem, but might run forever otherwise).
+
 In this post I will mostly present the code for a very simple (and naive, too)
 theorem prover in OCaml, using my library
 `Logtk <https://www.rocq.inria.fr/deducteam/Logtk/index.html>`_. I assume
 the reader has some basic knowledge of first-order logic (quantifiers `∀` and
 `∃`, logic connectives `¬`, `∨`, `∧` and `⇒`, and the notion of **term**).
-
 The code is available in `Logtk itself <https://github.com/c-cube/logtk/blob/923411f30cdf6a4085cff19615dd31606543270e/src/demo/resolution/resolution1.ml>`_
 (`raw version <https://raw.githubusercontent.com/c-cube/logtk/923411f30cdf6a4085cff19615dd31606543270e/src/demo/resolution/resolution1.ml>`_). If you
 installed the most recent version (0.5.1) of ``Logtk``, it should compile
@@ -30,6 +42,8 @@ using
 
 You can test it on easy problems defined in the `TPTP syntax <http://tptp.org/>`_,
 for instance some of the `Pelletier Problems <http://cedeela.fr/~simon/files/pelletier_problems_1_to_47.tgz>`_ (some of which are too hard for the prover!).
+TPTP is also an archive with literally thousands of problems (from easy
+to very hard) in the common syntax described above.
 
 Preamble
 --------
