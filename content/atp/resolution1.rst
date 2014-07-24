@@ -556,7 +556,7 @@ Conclusion
 
 I wrote this program in a short lapse of time, to illustrate
 how ``Logtk`` could be used. The result is very naive and has no chance of
-competing with real provers (such as `E <eprover.org>`_). Still, I hope
+competing with real provers (such as `E <http://eprover.org>`_). Still, I hope
 this post will shine some light on the domain of automated theorem
 proving and maybe — who knows? — get some people interested in the domain.
 I should point out that I wrote a more serious prover, `Zipperposition <https://github.com/c-cube/zipperposition/>`_,
