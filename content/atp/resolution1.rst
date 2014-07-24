@@ -93,7 +93,7 @@ Literals
 
 Then we have to represent literals, because ``Logtk`` doesn't (the
 representation would be too specific).  A literal is an atomic proposition
-(term of type `$o` in ``TPTP``, i.e. the type of
+(term of type ``$o`` in ``TPTP``, i.e. the type of
 propositions), or its negation. We represent this as a pair of
 type ``FOTerm.t * bool`` (term + sign).
 
@@ -113,7 +113,7 @@ Examples:
           for debugging. *)
 
       let compare = CCOrd.pair T.cmp CCOrd.bool_
-      let equal a b = compare a b=0
+      let equal a b = (compare a b) = 0
 
       let pp buf (t,b) =
         Printf.bprintf buf "%s%a"
@@ -280,7 +280,7 @@ is found.
      if c = [] then raise Unsat
      else if Clause.is_trivial c
      then (
-       Util.debug 4 "clause %a is trivial" Clause. pp c;
+       Util.debug 4 "clause %a is trivial" Clause.pp c;
      )
      else if not (ClauseSet.mem c !_active_set)
      then (
@@ -559,4 +559,7 @@ how ``Logtk`` could be used. The result is very naive and has no chance of
 competing with real provers (such as `E <eprover.org>`_). Still, I hope
 this post will shine some light on the domain of automated theorem
 proving and maybe — who knows? — get some people interested in the domain.
+I should point out that I wrote a more serious prover, `Zipperposition <https://github.com/c-cube/zipperposition/>`_,
+using Logtk.
 
+thanks to nicoo and Enjolras on freenode for their second reading.
