@@ -559,5 +559,5 @@ I wrote this program in a short lapse of time, to illustrate
 how ``Logtk`` could be used. The result is very naive and has no chance of
 competing with real provers (such as `E <eprover.org>`_). Still, I hope
 this post will shine some light on the domain of automated theorem
-proving.
+proving and maybe — who knows? — get some people interested in the domain.
 
