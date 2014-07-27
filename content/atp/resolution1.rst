@@ -18,7 +18,7 @@ and then tries to produce a proof of the theorem. In practice it's almost always
 done by *refutation*: to prove that `Γ ⊢ F` (formula `F` is a theorem
 under axioms `Γ`), we try to deduce `⊥` (false) from `Γ, ¬F`). The
 applications for this kind of technology are multiple, but afaik
-the prominent one is *software veriication* — aims at formally proving that
+the prominent one is *software verification* — aims at formally proving that
 a program satisfies a specification ("not crashing" is a good start).
 There has been a lot of research in this area for decades, but the problem
 is extremely hard (only *semi-decidable*: you will find a solution eventually
@@ -193,7 +193,7 @@ then, **substitutions**.
   resolution is about **refutation** (deduce `⊥` from hypothesis).
   The function ``Clause.is_trivial`` checks whether this simple criterion
   holds.
-- A substitution maps some variables to terms. Here the function ``Clause.apply-subst``
+- A substitution maps some variables to terms. Here the function ``Clause.apply_subst``
   will be used to **apply** the substitution to a clause — replace variables
   of the clause by their image in the substitution (or keep them unchanged if
   they do not appear in the substitution.  Substitutions are pre-defined in
