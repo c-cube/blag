@@ -16,8 +16,8 @@ that evaluates the expression in the scope of the module. It's
 one of those features of OCaml that is not as well known
 as it deserves :)
 
-.. _`OCaml module`: https://github.com/c-cube/ocaml-containers/blob/master/qCheck.mli/
-.. _documentation: http://cedeela.fr/~simon/software/containers/QCheck.html
+.. _`OCaml module`: https://github.com/c-cube/qcheck/blob/master/qCheck.mli/
+.. _documentation: http://cedeela.fr/~simon/software/qcheck/QCheck.html
 
 Rather than writing unit tests on specific test cases, the user
 writes **invariants** as boolean functions, and has them run
