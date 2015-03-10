@@ -2,7 +2,6 @@
 :date: 10-03-2015
 :title: Simple Refinements Types for OCaml
 :tags: ocaml,types,refinement
-:status: draft
 
 For more than one year, vulnerabilies in software (especially pervasive C software)
 have been disclosed at an alarmingly high rate. I love OCaml, which is definitely
@@ -172,4 +171,15 @@ How to parametrize predicates with values, even known statically? Would
 be extremely useful for invariants parametrized by comparison function,
 for instance. Maybe the values can be existentially quantified in argument
 positions, and made opaque in return value position…
+
+
+Conclusion
+----------
+
+This is clearly just a rough idea, in dire need of refinement (no pun
+intended).  However, I think it is both really simple on the type-checking/type
+inference side (compared to true formal verificatio) and easy to use, as a more
+powerful version of private aliases or phantom types to express simple
+invariants in type signatures. I would love to hear the opinion of people
+who have a good knowledge of OCaml's type-{checker, system}.
 
