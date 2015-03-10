@@ -2,7 +2,7 @@
 :date: 10-03-2015
 :title: Simple Refinements Types for OCaml
 :tags: ocaml,types,refinement
-:status:draft
+:status: draft
 
 For more than one year, vulnerabilies in software (especially pervasive C software)
 have been disclosed at an alarmingly high rate. I love OCaml, which is definitely
