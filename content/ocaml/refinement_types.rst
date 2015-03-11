@@ -178,7 +178,7 @@ Conclusion
 
 This is clearly just a rough idea, in dire need of refinement (no pun
 intended).  However, I think it is both really simple on the type-checking/type
-inference side (compared to true formal verificatio) and easy to use, as a more
+inference side (compared to true formal verification) and easy to use, as a more
 powerful version of private aliases or phantom types to express simple
 invariants in type signatures. I would love to hear the opinion of people
 who have a good knowledge of OCaml's type-{checker, system}.
