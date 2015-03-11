@@ -183,3 +183,5 @@ powerful version of private aliases or phantom types to express simple
 invariants in type signatures. I would love to hear the opinion of people
 who have a good knowledge of OCaml's type-{checker, system}.
 
+**Edit**: instead of a SAT-solver, a BDD library (binary decision diagrams) might
+be simpler to use in the context of a type-checker.
