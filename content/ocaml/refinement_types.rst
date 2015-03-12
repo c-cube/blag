@@ -185,3 +185,13 @@ who have a good knowledge of OCaml's type-{checker, system}.
 
 **Edit**: instead of a SAT-solver, a BDD library (binary decision diagrams) might
 be simpler to use in the context of a type-checker.
+
+I got many interesting pointers from people:
+
+- `(late) typestate in rust <https://pcwalton.github.io/blog/2012/12/26/typestate-is-dead/>`_
+- `blame, coercions <http://homepages.inf.ed.ac.uk/wadler/topics/blame.html#coercions>`_
+- `liquid haskell <http://goto.ucsd.edu/%7Erjhala/liquid/haskell/blog/about/>`_
+- `contract ocaml <http://gallium.inria.fr/%7Enaxu/research/hcc.html>`_ which looks
+  very interesting in this perspective
+- relation to abstract interpretation (the *predicate domain*)
+
