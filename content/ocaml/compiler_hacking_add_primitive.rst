@@ -65,7 +65,7 @@ It is a bad™ idea to add a primitive to, say, ``byterun/sys.c`` and use it in
 the compiler immediately. I tried it, and it failed to compile. The correct
 way, as I learnt from Jérémie Dimino (@diml) and Thomas Refis, is as follows:
 
-#. add the primitive into some ``.c`` file, but do not *use* it yet anywhere
+#. add the primitive into the relevant ``.c`` file, but do not *use* it yet anywhere
    in the compiler.
 #. ``make world``. This compiles the interpreter and bytecode compiler.
 #. ``make bootstrap``. This updates the bytecode archives (in ``boot/``) of
