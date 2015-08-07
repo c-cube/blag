@@ -61,8 +61,8 @@ what that means).
 **edit**: @gasche points that all the ``CAMLfoo`` primitives are documented
 in `the official manual <http://caml.inria.fr/pub/docs/manual-ocaml/intfc.html>`_.
 In particular, writing C "stubs" (C functions that can be used directly from
-OCaml via a `external` declaration) requires, in general, using `CAMLparam` and
-`CAMLlocal` to ensure that the GC is aware that some values exist
+OCaml via a ``external`` declaration) requires, in general, using ``CAMLparam`` and
+``CAMLlocal`` to ensure that the GC is aware that some values exist
 (either as parameters to the function, or as local variables).
 
 How to add a primitive: Bootstrap!
