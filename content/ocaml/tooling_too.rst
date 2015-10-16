@@ -5,12 +5,12 @@
 :status: draft
 
 A quick note about my current OCaml setup, in my last
-project, `Nunchaku <https://github.com/nunchaku-inria/nunchaku/>_`.
+project, `Nunchaku <https://github.com/nunchaku-inria/nunchaku/>`_.
 
 Oasis
 =====
 
-First, I use `Oasis <http://oasis.forge.ocamlcore.org/>_` to manage and
+First, I use `Oasis <http://oasis.forge.ocamlcore.org/>`_ to manage and
 build the project. It relies on OCamlbuild, but brings in several niceties:
 
 - automatic generation ``configure`` and ``Makefile``
@@ -21,7 +21,7 @@ build the project. It relies on OCamlbuild, but brings in several niceties:
 Merlin
 ======
 
-Oh dear. `Merlin <https://github.com/the-lambda-church/merlin>_` has improved
+Oh dear. `Merlin <https://github.com/the-lambda-church/merlin>`_ has improved
 my workflow with OCaml so much that I can't imagine working without it now.
 I can use it with Vim, but it also works for emacs users, so everyone is happy.
 The basics features I use are the ability to ask for the type of any expression (cursor
