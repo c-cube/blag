@@ -2,7 +2,6 @@
 :date: 16-10-2015
 :title: Tooling is Awesome
 :tags: ocaml,merlin,inotify
-:status: draft
 
 A quick note about my current OCaml setup, in my last
 project, `Nunchaku <https://github.com/nunchaku-inria/nunchaku/>`_.
