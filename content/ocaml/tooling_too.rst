@@ -13,7 +13,7 @@ Oasis
 First, I use `Oasis <http://oasis.forge.ocamlcore.org/>`_ to manage and
 build the project. It relies on OCamlbuild, but brings in several niceties:
 
-- automatic generation ``configure`` and ``Makefile``
+- automatic generation of ``configure`` and ``Makefile`` files.
 - it deals with sub-libraries, and the ``configure`` script can enable or
   disable the build of each sub-library.
 - it builds and runs my tests. Yay!
@@ -24,7 +24,8 @@ Merlin
 Oh dear. `Merlin <https://github.com/the-lambda-church/merlin>`_ has improved
 my workflow with OCaml so much that I can't imagine working without it now.
 I can use it with Vim, but it also works for emacs users, so everyone is happy.
-The basics features I use are the ability to ask for the type of any expression (cursor
+The basics features I use are the ability
+to ask for the type of any expression (cursor
 on it, then ``\t``), and the omni-completion of functions and modules
 in the same project or from (ocamlfind) libraries.
 
