@@ -31,7 +31,7 @@ in the same project or from (ocamlfind) libraries.
 Incidentally, my vim setup includes a file ``~/.vim/after/ftplugin/ocaml.vim``
 containing
 
-.. code-block::
+::
 
     au filetype ocaml   :setlocal comments=sr:(*,m1:\ ,e:*)
     au filetype ocaml   :nmap <leader>d :MerlinDestruct<CR>
@@ -52,7 +52,7 @@ Auto rebuild
 The Makefile contains a target ``make watch`` that will loop forever, watching
 for changes in ``.ml`` files to recompile. It looks like this:
 
-.. code-block::
+::
 
     # OASIS_START
     # OASIS_STOP
