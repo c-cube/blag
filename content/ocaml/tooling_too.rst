@@ -50,7 +50,8 @@ Auto rebuild
 ============
 
 The Makefile contains a target ``make watch`` that will loop forever, watching
-for changes in ``.ml`` files to recompile. It looks like this:
+for changes in ``.ml`` files to recompile. It looks like this (careful,
+use tabs, as always with Makefiles):
 
 ::
 
@@ -58,12 +59,12 @@ for changes in ``.ml`` files to recompile. It looks like this:
     # OASIS_STOP
 
     watch:
-            while find src/ -print0 \
-                | xargs -0 inotifywait -e delete_self -e modify ;\
-            do \
-                    echo "============ at `date` ==========" ; \
-                    make ; \
-            done
+        while find src/ -print0 \
+          | xargs -0 inotifywait -e delete_self -e modify ;\
+        do \
+          echo "============ at `date` ==========" ; \
+          make ; \
+        done
 
 
 
