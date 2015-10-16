@@ -58,7 +58,9 @@ for changes in ``.ml`` files to recompile. It looks like this:
     # OASIS_STOP
 
     watch:
-            while find src/ -print0 | xargs -0 inotifywait -e delete_self -e modify ; do \
+            while find src/ -print0 \
+                | xargs -0 inotifywait -e delete_self -e modify ;\
+            do \
                     echo "============ at `date` ==========" ; \
                     make ; \
             done
