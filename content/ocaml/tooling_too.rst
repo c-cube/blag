@@ -59,16 +59,22 @@ use tabs, as always with Makefiles):
     # OASIS_STOP
 
     watch:
-        while find src/ -print0 \
-          | xargs -0 inotifywait -e delete_self -e modify ;\
+        while find src/ -print0 | \
+         xargs -0 inotifywait -e delete_self -e modify ;\
         do \
           echo "============ at `date` ==========" ; \
           make ; \
         done
 
 
+Conclusion
+==========
 
-Well, that's it. I will post something about the internals of Nunchaku
+Well, that's it. I also use some other things, including
+of course `Opam <http://opam.ocaml.org/>`_
+and `opam.vim <https://github.com/rgrinberg/opam.vim>`_.
+
+I will post something about the internals of Nunchaku
 some day, it has a cool 5-arguments GADT ;-)
 
 
