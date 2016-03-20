@@ -82,13 +82,14 @@ It's a *formatting string* (same as in C printf), but more expressive.
 
 - The terminating ``@.`` prints a newline;
 - The ``@[<hov>......@]`` is a *box* that prints the same as ``....``,
-  but will align its content either horizontally ("h") or ("o")
-  vertically "v". The other kinds of boxes are "h" (horizontal),
+  but will align its content either horizontally ("h") or
+  vertically ("v"). The other kinds of boxes are "h" (horizontal),
   "v" (vertical), and "hv" (behaves either like "h" or like "v",
   but does not mix them).
-- the ``%a`` is similar to ``%d``, ``%s``, etc. (which print respectively
-  an integer and a string) but it's used for user-defined printers.
-  For instance, ``Format.printf "hello %a`` has type
+- the ``"%a"`` is similar to ``"%d"``, ``"%s"``, etc.
+  (which print respectively
+  an integer and a string), but it's used for user-defined printers.
+  For instance, ``Format.printf "hello %a"`` has type
   ``(Format.formatter -> 'a -> unit) -> 'a -> unit``: it takes a first
   argument that is an ``'a`` printer, then the ``'a`` to print.
   Luckily (or not), the combinators in ``CCFormat`` have similar types,
