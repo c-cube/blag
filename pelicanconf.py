@@ -45,5 +45,6 @@ THEME = u"theme"
 ISSO_SERVER="http://isso.cedeela.fr"
 
 # Extensions
-MD_EXTENSIONS = ['footnotes']
+MD_EXTENSIONS = ['footnotes', 'fenced_code',
+                 'markdown.extensions.codehilite']
 #MD_EXTENSIONS = ['latex','footnotes']
