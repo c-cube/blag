@@ -36,11 +36,12 @@ to print it. We could print it "by hand"
 (using `print_endline`, `print_int`, etc. or even using `Printf`)
 but it would be nice to have proper alignment.
 
-```ocaml
-    let l = CCList.init 100 (fun n-> n, n mod 2 = 0);;
 
-    Format.printf "l = [@[<hov>%a@]]@."
-      CCFormat.(list ~start:"" ~stop:"" (pair int bool)) l;;
+```ocaml
+let l = CCList.init 100 (fun n-> n, n mod 2 = 0);;
+
+Format.printf "l = [@[<hov>%a@]]@."
+  CCFormat.(list ~start:"" ~stop:"" (pair int bool)) l;;
 ```
 
 
@@ -72,7 +73,6 @@ get the exact same output):
          (89, false), (90, true), (91, false), (92, true),
          (93, false), (94, true), (95, false), (96, true),
          (97, false), (98, true), (99, false), (100, true)]
-
 
 Nice, but what does this horrible `"l = [@[<hov>%a@]]@."` mean?
 It's a *formatting string* (same as in C printf), but more expressive.
