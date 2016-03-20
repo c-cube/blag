@@ -46,5 +46,5 @@ ISSO_SERVER="http://isso.cedeela.fr"
 
 # Extensions
 MD_EXTENSIONS = ['footnotes', 'fenced_code',
-                 'markdown.extensions.codehilite']
+                 'codehilite(css_class=highlight,use_pygments=True)']
 #MD_EXTENSIONS = ['latex','footnotes']
