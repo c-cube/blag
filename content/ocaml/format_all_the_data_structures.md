@@ -2,14 +2,13 @@ Author: simon
 Date: 20-03-2016
 Title: Format All the Data Structures
 Tags: ocaml,printing,format
-Status: draft
 
 Last October, I moved in Nancy to start working as an engineer with
 [Jasmin Blanchette](http://www4.in.tum.de/~blanchet/) on an exciting
 project called [Nunchaku](https://github.com/nunchaku-inria/nunchaku/).
 Since my domain is formal logic, I spend a lot of time manipulating,
 transforming, and traversing ASTs (abstract syntax trees). My primary
-method for debugging is pretty-printing structures; which nunchaku,
+method for debugging is pretty-printing structures; in nunchaku,
 I even have a `--print-all` flag to print the AST after each transformation,
 since the tool is basically a bidirectional pipeline that composes
 transformations. I will certainly blog on the design of Nunchaku
