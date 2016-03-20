@@ -30,7 +30,7 @@ function shut_down(){
   if [[ -f $SRV_PID ]]; then
     PID=$(cat $SRV_PID)
     PROCESS=$(ps -p $PID | tail -n 1 | awk '{print $4}')
-    if [[ $PROCESS == python ]]; then
+    if [[ $PROCESS == python2 ]]; then
       echo "Killing SimpleHTTPServer"
       kill $PID
     else
@@ -62,7 +62,7 @@ function start_up(){
   $PELICAN --debug --autoreload -r $INPUTDIR -o $OUTPUTDIR -s $CONFFILE $PELICANOPTS &
   echo $! > $PELICAN_PID
   cd $OUTPUTDIR
-  python -m SimpleHTTPServer &
+  python2 -m SimpleHTTPServer &
   echo $! > $SRV_PID
   cd $BASEDIR
   sleep 1 && echo 'Pelican and SimpleHTTPServer processes now running in background.'
