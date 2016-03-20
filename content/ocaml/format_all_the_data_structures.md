@@ -27,7 +27,7 @@ standard library.
 Even then, it is easy, although a bit tedious, to re-write the
 combinators from `CCFormat` using only what `Format` provides,
 so what I'll explain here can be done with vanilla OCaml,
-or with, say, `the Fmt library <https://github.com/dbuenzli/fmt>`_.
+or with, say, [the Fmt library](https://github.com/dbuenzli/fmt).
 
 ## A first taste
 
@@ -101,4 +101,73 @@ debugging time has come.
 
 ## Trees, Recursion, and nested Boxes
 
-todo
+A case where boxes are really important is for printing recursive
+structures, such as trees. As far as I know, OCaml itself (the compiler)
+uses `Format` to print its intermediate ASTs, the signatures, etc.
+
+
+## The toplevel
+
+The toplevel itself (or [utop](https://github.com/diml/utop), you
+should probably use it!) uses `Format` for printing values.
+There is a pragma `#install_printer` to make it use your own printer:
+
+```ocaml
+type complex = Complex.t = { re: float; im: float; };;
+let pp_complex out c =
+  Format.fprintf out "%.2f + %.2fi" c.re c.im;;
+#install_printer pp_complex;;
+
+[ {re=1.0; im=(atan 1. *. 4.)}
+; {re=0.; im=37.}
+];;
+- : complex list = [1.00 + 3.14i; 0.00 + 37.00i]
+```
+
+Yes, the toplevel will use the custom printer even inside structures
+such as lists.
+
+## Deriving printers
+
+It is possible to derive printers automatically, using
+[ppx_deriving.show](https://github.com/whitequark/ppx_deriving) (and
+possibly camlp4-based things, in versions anterior to 4.02, but
+ppx is the future). This makes printers even easier to use
+as, in general, you don't have to write anything to use them
+on your types (unless you want some specific behavior). It
+is as simple as:
+
+```ocaml
+#require "ppx_deriving.show";;
+
+type foo =
+  | A of int
+  | B of string * bool list
+  [@@deriving show] ;;
+
+type bar = {
+  foo1 : foo;
+  foo2 : foo option
+} [@@deriving show];;
+
+let b = {foo1=A 42; foo2=Some (B ("a string", [true; false])); };;
+
+Format.asprintf "b=%a" pp_bar b;;
+- : string = "b={ foo1 = (A 42); foo2 = (Some B (\"a string\", [true; false])) }"
+
+```
+
+## A word on performance
+
+Adding GADTs to OCaml made it possible  to clean
+the old magic code dealing with format strings that, once, gave `Format`
+a reputation for slowness (see [the awesome work of Benoit
+Vaugon](http://caml.inria.fr/mantis/view.php?id=6017)). I hope that flambda
+(the new optimization pass in OCaml 4.03) will reduce  the performance
+overhead even further.
+
+## Conclusion
+
+`Format` is great and you should use it! :)
+
+More seriously, in many cases
