@@ -97,14 +97,101 @@ It's a *formatting string* (same as in C printf), but more expressive.
 It is usually convenient, when you define some type `t`, to
 also define nearby a value `val print : Format.formatter -> t -> unit`.
 This way, it is straightforward to print values of type `t` when
-debugging time has come.
+debugging time has come. Note that printers take a `formatter` as
+their first argument (to be used, typically, with `Format.fprintf`)
+which makes it possible to use them directly on files, etc. without
+creating a big string first.
 
 ## Trees, Recursion, and nested Boxes
 
 A case where boxes are really important is for printing recursive
 structures, such as trees. As far as I know, OCaml itself (the compiler)
 uses `Format` to print its intermediate ASTs, the signatures, etc.
+Let us define a small expression type, as an example:
 
+```ocaml
+type expr =
+  | Add of expr * expr
+  | Fun of bytes * expr
+  | Const of int
+  | Var of string
+  | Let of string * expr * expr
+  | App of expr * expr ;;
+
+let e1 = Fun ("x", Add (Var "x", Const 1));;
+val e1 : expr = Fun ("x", Add (Var "x", Const 1))
+```
+
+Ok, it does the job of representing a λ-calculus expression (with
+let-bindings and syntactic sugar for integers, wow!), but the representation
+of expressions is not very pretty. So let us use `Format`:
+
+```ocaml
+let rec print_expr out = function
+  | Const i -> CCFormat.int out i
+  | Var s -> CCFormat.string out s
+  | Add (e1,e2) ->
+    Format.fprintf out "@[<2>%a@ + %a@]" print_expr_inner e1 print_expr_inner e2
+  | Let (x,e1,e2) ->
+    Format.fprintf out "@[<v>@[<2>let %s =@ @[%a@] in@]@ %a@]"
+      x print_expr e1 print_expr e2
+  | App (e1,e2) ->
+    Format.fprintf out "@[<2>%a@ %a@]" print_expr_inner e1 print_expr_inner e2
+  | Fun (x,e) ->
+    Format.fprintf out "@[<2>fun %s ->@ @[%a@]@]" x print_expr_inner e
+and print_expr_inner out e = match e with
+  | Const _ | Var _ -> print_expr out e
+  | Add _ | Fun _ | App _ | Let _ ->
+    Format.fprintf out "(@[%a@])" print_expr e
+;;
+```
+
+where:
+
+- the argument `out` is the formatter we write into,
+- `CCFormat.int` is short for `Format.pp_print_int`,
+- the second printer is used to wrap an expression in parenthesis
+  when needed to avoid ambiguities,
+- we put boxes around composite expressions to enforce proper
+  indentation,
+- `"@,"` is a break (can be replaced by a newline + indentation
+  if it pleases the pretty-printer),
+- `"@ "` is either a space or a break,
+- `"@[<2>"` starts a box with indentation 2.
+
+This is a very simple printer, and it could be improved, but
+it contains the gist of how to write a printer for recursive structures.
+Let see how it performs:
+
+```ocaml
+(* define a bigger expression *)
+let e2 =
+  Let ("f", e1,
+    Let ("x",
+      App (Var "f", App (Var "f", Const 0)),
+      Let ("result",
+        Let ("g",
+          Fun ("y", App(Var "f", Add (Var "x", Var "y"))),
+          App (Var "g", (Add (Const 40, Var "x")))),
+        Add (Const 0, Var "result"))))
+;;
+
+(* print it: see the indentation *)
+Format.printf "@[<2>e2 =@ %a@]@." print_expr e2;;
+e2 =
+  let f = fun x -> (x + 1) in
+  let x = f (f 0) in
+  let result = let g = fun y -> (f (x + y)) in
+               g (40 + x) in
+  0 + result
+- : unit = ()
+```
+
+For a more realistic example, [here is the main printer in Nunchaku](https://github.com/nunchaku-inria/nunchaku/blob/a69d3ebce2fb83c40824420c4d93cc615c8a5fa1/src/core/terms/TermInner.ml#L311).
+It's not perfect (it prints too many parenthesis) but works pretty well,
+as the following example shows. Just imagine if there was no indentation…
+
+![a pretty-printed term](/images/pretty_print_term.png)
 
 ## The toplevel
 
@@ -169,5 +256,3 @@ overhead even further.
 ## Conclusion
 
 `Format` is great and you should use it! :)
-
-More seriously, in many cases
