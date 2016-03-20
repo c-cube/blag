@@ -82,6 +82,7 @@ It's a *formatting string* (same as in C printf), but more expressive.
   vertically ("v"). The other kinds of boxes are "h" (horizontal),
   "v" (vertical), and "hv" (behaves either like "h" or like "v",
   but does not mix them).
+  There is a [tutorial about boxes](http://caml.inria.fr/resources/doc/guides/format.en.html) on OCaml's website.
 - the `"%a"` is similar to `"%d"`, `"%s"`, etc.
   (which print respectively
   an integer and a string), but it's used for user-defined printers.
