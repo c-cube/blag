@@ -28,6 +28,14 @@ combinators from `CCFormat` using only what `Format` provides,
 so what I'll explain here can be done with vanilla OCaml,
 or with, say, [the Fmt library](https://github.com/dbuenzli/fmt).
 
+A quick work on `Fmt` and `CCFormat`: both are modules that provide additional
+facilities on top of `Format` (combinators for printing lists, options,
+arrays, etc., ANSI codes for coloring the output) that makes life easier.
+Indeed, `Format` provides the pretty-printing algorithm, the support for
+format strings (same as `Printf`), basic printers, but does not provide
+more than the bare minimum for printing data structures, and that is why
+extension libraries exist.
+
 ## A first taste
 
 Let us say we have a value of type `(int * bool) list`, and we want
