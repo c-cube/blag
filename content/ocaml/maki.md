@@ -1,8 +1,7 @@
 Author: simon
 Date: 2-05-2016
-Title: Maki: like make, but pretty
+Title: Maki: on-disk memoization for (deterministic) fun and profit
 Tags: ocaml,build,memoization,cache,make
-Status: draft
 
 Greating, earthlings! Today I will present an exciting new OCaml library
 called **maki**. This post will be longer as usual, because it is actually
