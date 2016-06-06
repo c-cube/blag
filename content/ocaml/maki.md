@@ -295,7 +295,8 @@ costly computations (such as calls to `ocamldep`):
    dependencies of each module (using `find_deps`);
 2. the mapping `m -> find_deps m` describes a directed graph; compute
    some topological ordering of this graph (here, using
-   [containers's graph module](file:///home/simon/workspace/containers/containers.docdir/CCGraph.html). Since is is relatively cheap, we do not bother memoizing it.
+   [containers's graph module](http://cedeela.fr/~simon/software/containers/CCGraph.html).
+   Since is is relatively cheap, we do not bother memoizing it.
 
 ```ocaml
 (* find a topological ordering of given modules *)
