@@ -8,7 +8,7 @@ SITEURL = 'https://cedeela.fr'
 
 # rss and atom
 
-FEED_DOMAIN = SITEURL + "/feeds/"
+FEED_DOMAIN = SITEURL
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 
 # bleh
