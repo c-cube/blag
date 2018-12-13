@@ -13,16 +13,28 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+default_language = "en"
+
+generate_rss = true
+
 # submodule https://github.com/getzola/hyde into `themes/` dir
 theme = "hyde"
+
+#taxonomies = [
+#    # You can enable/disable RSS
+#    {name = "author", rss = false},
+#    {name = "tags", rss = true},
+#]
 
 [extra]
 # Put all your custom variables here
 
 # side
 hyde_links = [
-    {url = "https://cedeela.fr", name = "Home"},
+    {url = "/", name = "Home"},
+    {url = "/rss.xml", name = "RSS feed"},
     {url = "https://github.com/c-cube", name = "Simon's github page"},
+    {url = "https://github.com/vbarrielle", name = "Shuba's github page"},
 ]
 
 

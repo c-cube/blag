@@ -1,5 +1,5 @@
 +++
-date = 2012-11-29T00:00:00
+date = 2012-11-29
 title = "Frist post"
 slug = "frist-post"
 [taxonomies]
