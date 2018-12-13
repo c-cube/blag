@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://blag.cedeela.fr"
 
-title = "The Blaaaaag"
+title = "The Blag — Random Ramblings and Silly Walks"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
