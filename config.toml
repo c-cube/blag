@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://cedeela.fr"
+base_url = "https://blag.cedeela.fr"
 
 title = "The Blaaaaag"
 
