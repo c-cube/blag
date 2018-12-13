@@ -1,15 +1,17 @@
-Author: simon
-Date: 29-11-2012
-Title: Frist post
-Tags: emptyset,frist
-Slug: frist-post
++++
+date = 2012-11-29T00:00:00
+title = "Frist post"
+slug = "frist-post"
+[taxonomies]
+tags = [ "emptyset","frist"]
+author = ["simon"]
++++
 
-Hi there, here is the first post on this [blag](http://xkcd.com/148/ blag)! There will (or should, at least) be posts on technical
-subjects by several authors : 
+Hi there, here is the first post on this [blag](http://xkcd.com/148/)! There will (or should, at least) be posts on technical subjects by several authors :
 
-- [_shuba_](http://shuba.cedeela.fr/);
-- Vincent Doba;
-- [Simon Cruanes](http://cedeela.fr/~simon/).
+-   [shuba](http://shuba.cedeela.fr/);
+-   Vincent Doba;
+-   [Simon Cruanes](http://simon.cedeela.fr/).
 
 We expect to write on C++ programming, functional programming, logic, graphics, etc.
 

@@ -1,0 +1,19 @@
++++
+draft = true
+slug = "test-ocaml"
+date = 2013-10-05
+title = "Test for syntax coloring"
+[taxonomies]
+tags = ["ocaml"]
+author = ["simon"]
++++
+
+# Test for syntax coloring
+
+
+```ocaml
+let rec f x = x + 1 in
+Printf.printf "hello world %d\n" (f 41);;
+```
+
+I like equations $ f(x) = x^{2} $

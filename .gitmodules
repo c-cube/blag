@@ -1,6 +1,6 @@
-[submodule "pelican-themes"]
-	path = pelican-themes
-	url = https://github.com/getpelican/pelican-themes.git
 [submodule "themes"]
 	path = themes
 	url = https://github.com/getpelican/pelican-themes.git
+[submodule "zola/themes/hyde"]
+	path = themes/hyde
+	url = https://github.com/getzola/hyde
