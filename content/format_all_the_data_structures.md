@@ -1,6 +1,7 @@
 +++
 date = 2016-03-20
 title = "Format All the Data Structures"
+slug = "format-all-the-data-structures"
 [taxonomies]
 tags = ["ocaml","printing","format"]
 author = ["simon"]

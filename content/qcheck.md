@@ -1,6 +1,7 @@
 +++
 date = 2013-10-05
 title = "QuickCheck for OCaml"
+slug = "quickcheck-for-ocaml"
 
 [taxonomies]
 author = ["simon"]

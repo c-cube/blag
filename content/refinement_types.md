@@ -1,6 +1,7 @@
 +++
 date = 2015-03-10
-title = "Simple Refinements Types for OCaml"
+title = "Simple Refinement Types for OCaml"
+slug = "simple-refinement-types-for-ocaml"
 [taxonomies]
 author = ["simon"]
 tags =  ["ocaml","types","refinement"]

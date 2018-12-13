@@ -1,6 +1,7 @@
 +++
 date = 2014-06-11
 title = "Batch Operations on Collections"
+slug = "batch-operations-on-collections"
 [taxonomies]
 author = ["simon"]
 tags = ["ocaml","flat_map","collections","performance","batch","gadt"]

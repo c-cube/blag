@@ -1,6 +1,7 @@
 +++
 date  = 2014-03-12
 title = "Universal Serialization and Deserialization"
+slug = "universal-serialization-and-deserialization"
 [taxonomies]
 author = ["simon"]
 tags  = ["ocaml","serializing","json","sexp","GADT"]
