@@ -2,3 +2,5 @@ public/
 *.pid
 .*.swp
 latex.cache
+static/*.js
+static/*.js.map
