@@ -23,13 +23,14 @@ SERVER_HOME="/home/www-data/blag/"
 push: build
 	rsync -tavu public/* "simon@goutte.cedeela.fr:$(SERVER_HOME)"
 
-watch-ts:
+clean-ts:
+	rm $(STATIC) || true
+
+.PHONY: build-ts clean-ts
+
+watch:
 	while find Makefile content/ ts/ -print0 | xargs -0 inotifywait -e delete_self -e modify ; do \
 		echo "============ at `date` ==========" ; \
 		make; \
 	done
 
-clean-ts:
-	rm $(STATIC) || true
-
-.PHONY: build-ts clean-ts

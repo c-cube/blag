@@ -76,6 +76,12 @@ function evTextChange() {
     }
 }
 
+function clearCanvas() {
+    let ctx = (<HTMLCanvasElement>canvas).getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    canvas.hidden = true;
+}
+
 // validate `text` and update canvas
 for (let ev of ['change','input','paste']) {
     text.addEventListener(ev, evTextChange);
@@ -95,9 +101,7 @@ document.getElementById('gridInputEnter').addEventListener('click', () => {
 
 document.getElementById('gridInputClear').addEventListener('click', () => {
     text.value = '';
-    let ctx = (<HTMLCanvasElement>canvas).getContext('2d');
-    ctx.clearRect(0, 0, 500, 300);
-    canvas.hidden = true;
+    clearCanvas();
 });
 
 
@@ -114,7 +118,11 @@ document.getElementById('gridInputClear').addEventListener('click', () => {
         // add a button that will load the grid
         const butLoad = <HTMLButtonElement> document.createElement('button');
         butLoad.textContent = 'load';
-        butLoad.onclick = () => { text.value = g; evTextChange(); };
+        butLoad.onclick = () => {
+            text.value = g;
+            clearCanvas();
+            evTextChange();
+        };
         x.appendChild(butLoad);
     }
 }
