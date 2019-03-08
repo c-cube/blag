@@ -70,7 +70,7 @@ A few difficult grids ([from this repo](https://github.com/attractivechaos/plb/t
 
 The code responsible for the Sudoku solving itself fits in roughly 260 lines
 of (relatively terse) OCaml. Most of the heavy work is delegated to **mSAT**,
-which, being a SAT-solver, is very good as exploring large search spaces
+which, being a SAT-solver, is very good at exploring large search spaces
 and pruning branches — exactly what's useful for combinatorial problems
 such as Sudoku solving.
 
