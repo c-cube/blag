@@ -3,7 +3,7 @@ date = 2012-12-10
 title = "And this..."
 slug = "and-this"
 [taxonomies]
-author = ["shuba"]
+authors = ["shuba"]
 tags = ["random"]
 +++
 

@@ -3,7 +3,7 @@ date = 2012-12-18
 title = "Go, C++!!"
 slug = "go-cpp"
 [taxonomies]
-author = ["shuba"]
+authors = ["shuba"]
 tags = ["c++11"," concurrency"," go"]
 +++
 

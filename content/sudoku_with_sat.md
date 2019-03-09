@@ -3,7 +3,7 @@ date = 2019-02-26
 title = "Solving Sudokus with msat"
 slug = "sudoku-msat"
 [taxonomies]
-author = ["simon"]
+authors = ["simon"]
 tags = ["ocaml","SAT","msat"]
 +++
 

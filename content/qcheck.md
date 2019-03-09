@@ -4,7 +4,7 @@ title = "QuickCheck for OCaml"
 slug = "quickcheck-for-ocaml"
 
 [taxonomies]
-author = ["simon"]
+authors = ["simon"]
 tags  = ["ocaml","testing","properties"]
 +++
 

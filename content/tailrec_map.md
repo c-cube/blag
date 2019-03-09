@@ -3,7 +3,7 @@ date = 2012-12-03
 title = "Tail-recursive map in OCaml"
 slug = "tail-recursive-map-in-ocaml"
 [taxonomies]
-author = ["simon"]
+authors = ["simon"]
 tags  = ["ocaml","unsafe","optimization"]
 +++
 

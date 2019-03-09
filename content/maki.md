@@ -2,7 +2,7 @@
 date = 2016-02-05
 title = "Maki: on-disk memoization for (deterministic) fun and profit"
 [taxonomies]
-author = ["simon"]
+authors = ["simon"]
 tags = ["ocaml","build","memoization","cache","make"]
 +++
 

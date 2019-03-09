@@ -4,7 +4,7 @@ title = "Debugging with DOT"
 slug = "debug-with-dot"
 [taxonomies]
 tags = ["dot","debug","logic","proof"]
-author = ["simon"]
+authors = ["simon"]
 +++
 
 # Rationale

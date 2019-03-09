@@ -3,7 +3,7 @@ date  = 2015-10-16
 title  = "Tooling is Awesome"
 slug = "tooling-is-awesome"
 [taxonomies]
-author = ["simon"]
+authors = ["simon"]
 tags = ["ocaml,merlin,inotify"]
 +++
 

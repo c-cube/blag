@@ -4,7 +4,7 @@ title = "Format All the Data Structures"
 slug = "format-all-the-data-structures"
 [taxonomies]
 tags = ["ocaml","printing","format"]
-author = ["simon"]
+authors = ["simon"]
 +++
 
 Last October, I moved in Nancy to start working as an engineer with

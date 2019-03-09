@@ -3,7 +3,7 @@ date = 2015-03-10
 title = "Simple Refinement Types for OCaml"
 slug = "simple-refinement-types-for-ocaml"
 [taxonomies]
-author = ["simon"]
+authors = ["simon"]
 tags =  ["ocaml","types","refinement"]
 +++
 

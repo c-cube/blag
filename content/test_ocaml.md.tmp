@@ -5,7 +5,7 @@ date = 2013-10-05
 title = "Test for syntax coloring"
 [taxonomies]
 tags = ["ocaml"]
-author = ["simon"]
+authors = ["simon"]
 +++
 
 # Test for syntax coloring

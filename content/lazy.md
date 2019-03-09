@@ -3,7 +3,7 @@ date  = 2014-05-02
 title = "Representing Lazy Values"
 slug = "representing-lazy-values"
 [taxonomies]
-author = ["simon"]
+authors = ["simon"]
 tags= ["ocaml","lazy","obj","performance"]
 +++
 

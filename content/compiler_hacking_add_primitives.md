@@ -2,7 +2,7 @@
 date = 2015-08-06
 title  = "OCaml Compiler Hacking: how to add a primitive"
 [taxonomies]
-author = ["simon"]
+authors = ["simon"]
 tags = ["ocaml","compiler","primitive","C"]
 +++
 
