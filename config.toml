@@ -38,8 +38,8 @@ even_menu = [
     {url = "/categories", name = "Categories"},
     {url = "/tags", name = "Tags"},
     {url = "/authors", name = "Authors"},
-    {url = "https://github.com/c-cube", name = "Simon's GH"},
-    {url = "https://github.com/vbarrielle", name = "Shuba's GH"},
+    {url = "https://github.com/c-cube", name = "Simon's github"},
+    {url = "https://github.com/vbarrielle", name = "Shuba's github"},
 ]
 
 even_title = "The Blag"

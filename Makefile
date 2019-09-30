@@ -18,10 +18,10 @@ static/sudoku_solve_wrap.js: ts/sudoku_solve_wrap.ts
 static/sudoku_with_sat.js: ts/sudoku_with_sat.ts
 	tsc $(TSC_OPTS) $< --outFile $@ --lib 'es7, dom'
 
-SERVER_HOME="/home/www-data/blag/"
+SERVER_HOME="/home/simon/www/blag/"
 
 push: build
-	rsync -tavu public/* "simon@goutte.cedeela.fr:$(SERVER_HOME)"
+	rsync -tavu public/* "simon@cedeela.fr:$(SERVER_HOME)"
 
 clean-ts:
 	rm $(STATIC) || true
