@@ -6,10 +6,11 @@ slug = "inside-a-curve"
 authors = ["shuba"]
 tags = ["topology","graphics","2D"]
 +++
-
 Hi, I am shuba, and I'll be using this blog to dicuss various computer graphics topics I find interesting. I might also disgress on C++, which is my main programming language.
 
 For my first article, I'll try and answer a question that's not as simple as it seems: *onto what did I click?* How did the program know what I clicked on? We're used to be able to click on various kinds of button, rectangular or circular. But when using image editing software such as The Gimp or Inkscape, we want to select the freeform shapes we create.
+
+<!-- more -->
 
 Connex components
 =================

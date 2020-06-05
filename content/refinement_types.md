@@ -6,10 +6,11 @@ slug = "simple-refinement-types-for-ocaml"
 authors = ["simon"]
 tags =  ["ocaml","types","refinement"]
 +++
-
 For more than one year, vulnerabilies in software (especially pervasive C software) have been disclosed at an alarmingly high rate. I love OCaml, which is definitely safer, but still has gaps left open. I believe formal verification, albeit a very powerful tool, is not mature enough for most programmers (too difficult to use, requires too much efforts), so I'm thinking about alternative solutions that would be more lightweight to define and use, but would still increase the confidence in source code.
 
 So here is a draft of a relatively simple extension to OCaml, that allows to specify more invariants in types without requiring a full-fledged proof system. It's purely hypothetical and I did not implement it (nor don't I plan to do it, not before the end of my PhD). The purpose is to propose a conservative extension of OCaml with a type system that can represent more complex invariants, without putting too much of a burden on the user, in a way so adding annotations to existing programs incrementally is feasible and even easy.
+
+<!-- more -->
 
 The idea relies on *refinement types*, noted `{ ty | F }` where `ty` is a regular OCaml type and `F` is a boolean formula (read "type `ty` such that `F` holds). A regular type `ty` in a signature is short for `{ ty | true }`.
 

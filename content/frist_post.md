@@ -6,7 +6,6 @@ slug = "frist-post"
 tags = [ "emptyset","frist"]
 authors = ["simon"]
 +++
-
 Hi there, here is the first post on this [blag](http://xkcd.com/148/)! There will (or should, at least) be posts on technical subjects by several authors :
 
 -   [shuba](http://shuba.cedeela.fr/);

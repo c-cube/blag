@@ -6,7 +6,6 @@ slug = "batch-operations-on-collections"
 authors = ["simon"]
 tags = ["ocaml","flat_map","collections","performance","batch","gadt"]
 +++
-
 Some very common (and useful) operations, including the classic `map`, `filter`, and `flat_map`, traverse their whole argument and return another collection. When several such operations are composed, intermediate collections will be created and become useless immediately after. Languages like Haskell sometimes perform optimizations that *merge* together the operations so as to minimize the number of intermediate collections :
 
 ```ocaml
@@ -14,6 +13,8 @@ map f . map g == map (f . g)
 ```
 
 Sadly, the OCaml compiler performs very few optimizations (and in this case, the optimization would not be correct anyway, because it would change the order of evaluation and therefore side-effects).
+
+<!-- more -->
 
 Batch
 =====

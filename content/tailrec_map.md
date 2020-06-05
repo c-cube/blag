@@ -6,7 +6,6 @@ slug = "tail-recursive-map-in-ocaml"
 authors = ["simon"]
 tags  = ["ocaml","unsafe","optimization"]
 +++
-
 The `List.map` function of the OCaml standard lib is not implemented tail-recursively. The current version (as of 4.00 on my computer) is
 
 ```ocaml
@@ -14,6 +13,8 @@ let rec map f = function
     [] -> []
   | a::l -> let r = f a in r :: map f l
 ```
+
+<!-- more -->
 
 It's pretty efficient on small lists, but blows up the stack on big lists. After discussing on IRC with a friend of mine, that loves C and believes functional languages are too slow, I tried to write an efficient, although totally unsafe, version of `List.map`. The trick is to use the module `Obj` to manipulate the local, non-shared list we are creating. The code is:
 

@@ -5,7 +5,6 @@ title = "Maki: on-disk memoization for (deterministic) fun and profit"
 authors = ["simon"]
 tags = ["ocaml","build","memoization","cache","make"]
 +++
-
 Greating, earthlings! Today I will present an exciting new OCaml library
 called **maki**. This post will be longer as usual, because it is actually
 two posts in one:
@@ -14,6 +13,8 @@ two posts in one:
   most salient parts of its API;
 - then I will demonstrate how to use it to quickly build a (very naive) OCaml build
   system, featuring parallel build and cached computations thanks to Maki.
+
+<!-- more -->
 
 ## Overview of Maki
 

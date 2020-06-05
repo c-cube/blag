@@ -6,10 +6,11 @@ slug = "universal-serialization-and-deserialization"
 authors = ["simon"]
 tags  = ["ocaml","serializing","json","sexp","GADT"]
 +++
-
 **TL;DR**: combinators and GADTs allow to describe types in abstract enough a way that they can be converted into/from various serialization formats.
 
 **Edit**: the code is now available in its own repository on [github](https://github.com/c-cube/cconv), and on my [opam repository](https://github.com/c-cube/yolopam-repository) under the name `CConv`. Optional interfaces to Yojson, Sexplib and Bencode are also provided.
+
+<!-- more -->
 
 The problem
 ===========

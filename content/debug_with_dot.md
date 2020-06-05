@@ -6,15 +6,15 @@ slug = "debug-with-dot"
 tags = ["dot","debug","logic","proof"]
 authors = ["simon"]
 +++
-
 # Rationale
-
 I'm starting a PhD on first-order automated theorem proving, which is the reason I'm writing an [experimental theorem prover](http://github.com/c-cube/zipperposition/) in OCaml. Theorem provers are full of complicated algorithms (that I plan to write on later), and my usual techniques for debugging are twofold:
 
 1.  Writing a lot of `assert` to make sure invariants are not broken
 2.  Printing debug information on stdout, if required, to get an idea of what the prover is doing. This allows me to choose the level of detail of what is printed, depending on which incorrect behavior I'm tracking.
 
 The second technique, also known as *printf debugging*, is quite powerful (especially since OCaml does not feature a great debugger as an alternative). However, text is not great for representing structured data, and especially **graphs**. Here is where I bring [DOT](http://graphviz.org/) into play.
+
+<!-- more -->
 
 # A detailed example
 

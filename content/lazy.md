@@ -6,11 +6,12 @@ slug = "representing-lazy-values"
 authors = ["simon"]
 tags= ["ocaml","lazy","obj","performance"]
 +++
-
 A quick survey of Lazy in OCaml
 ===============================
 
 I remember having heard that [Jane Street](https://www.janestreet.com/) had its own implementation of `Lazy` values, and that it was faster than the standard one. So I played a bit with several ways of managing lazy values in OCaml.
+
+<!-- more -->
 
 Definition of Lazy implementations
 ----------------------------------

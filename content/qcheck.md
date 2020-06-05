@@ -7,8 +7,11 @@ slug = "quickcheck-for-ocaml"
 authors = ["simon"]
 tags  = ["ocaml","testing","properties"]
 +++
+I've written, and am using, an [OCaml module](https://github.com/c-cube/qcheck/blob/767e455a81c6a8748f48e22194927e24aad4cd29/src/core/QCheck.mli) (see the [documentation](https://c-cube.github.io/qcheck/)) that is heavily inspired from Haskell's QuickCheck.
 
-I've written, and am using, an [OCaml module](https://github.com/c-cube/qcheck/blob/767e455a81c6a8748f48e22194927e24aad4cd29/src/core/QCheck.mli) (see the [documentation](https://c-cube.github.io/qcheck/)) that is heavily inspired from Haskell's QuickCheck. Note: I will make an extensive use of the convenient notation
+<!-- more -->
+
+Note: I will make an extensive use of the convenient notation
 
 ```ocaml
 Module.(some expression)

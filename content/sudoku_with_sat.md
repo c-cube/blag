@@ -6,7 +6,6 @@ slug = "sudoku-msat"
 authors = ["simon"]
 tags = ["ocaml","SAT","msat"]
 +++
-
 The glamorous world of [SAT](https://en.wikipedia.org/wiki/SAT_solver)
 and [SMT solvers](https://en.wikipedia.org/wiki/Satisfiability_modulo_theories)
 is usually preoccupied with proving theorems, searching for software bugs,
@@ -19,6 +18,8 @@ by my good friend [Guillaume Bury](https://gbury.eu/) and myself.
 The solver's code can be found
 [on github](https://github.com/Gbury/mSAT/blob/c39431315fb678789eb244704cda78eb45c7e6af/src/sudoku/sudoku_solve.ml),
 but I'm going to detail the most salient parts here.
+
+<!-- more -->
 
 ## Demo
 

@@ -21,6 +21,8 @@ standard
 [Format](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Format.html)
 module from OCaml, that I use for pretty-printing all my data structures.
 
+<!-- more -->
+
 I will also use [containers](https://github.com/c-cube/ocaml-containers)
 because it provides some additional utils, in particular
 the `CCFormat` module contains predefined pretty-printers and printer

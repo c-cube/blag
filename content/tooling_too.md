@@ -6,8 +6,9 @@ slug = "tooling-is-awesome"
 authors = ["simon"]
 tags = ["ocaml,merlin,inotify"]
 +++
-
 A quick note about my current OCaml setup, in my last project, [Nunchaku](https://github.com/nunchaku-inria/nunchaku/).
+
+<!-- more -->
 
 Oasis
 =====
