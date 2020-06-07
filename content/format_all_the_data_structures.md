@@ -8,7 +8,7 @@ authors = ["simon"]
 +++
 
 Last October, I moved in Nancy to start working as an engineer with
-[Jasmin Blanchette](http://www4.in.tum.de/~blanchet/) on an exciting
+[Jasmin Blanchette](https://www.cs.vu.nl/~jbe248/) on an exciting
 project called [Nunchaku](https://github.com/nunchaku-inria/nunchaku/).
 Since my domain is formal logic, I spend a lot of time manipulating,
 transforming, and traversing ASTs (abstract syntax trees). My primary
