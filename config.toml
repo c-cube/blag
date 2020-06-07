@@ -42,6 +42,6 @@ even_menu = [
     {url = "https://github.com/vbarrielle", name = "Shuba's github"},
 ]
 
-even_title = "The Blag"
+even_title = "The Blag: Blogging on Logic And Graphics"
 
 # TODO mathjax: https://github.com/getzola/zola/issues/442
