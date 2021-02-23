@@ -3,6 +3,9 @@ base_url = "https://blag.cedeela.fr"
 
 title = "The Blag — Random Ramblings and Silly Walks"
 
+# math support
+#katex_enable = true
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 
