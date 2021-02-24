@@ -99,7 +99,7 @@ and is classical logic.
 ## Conclusion
 
 The title was click-baity, of course 🙂. But I do think that CH is over-hyped,
-because the correspondence is only interesting abstractly; in practice things
+because the correspondence is ~~only~~ mostly interesting abstractly; in practice things
 are either a (interesting) program, or a (interesting) proof, but not both
 at the same time.
 
