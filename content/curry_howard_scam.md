@@ -71,7 +71,7 @@ unclear.
 
 A domain where CH **does** make sense to me, is algorithms (written in a functional
 style) that are used as _existential witnesses_ of some property.
-For example, the Euclide GCD algorithm is, in a very real sense, a proof that
+For example, the Euclid GCD algorithm is, in a very real sense, a proof that
 two natural numbers have a GCD. You can write some Coq or Lean code that
 computes the GCD of two numbers and proves that it's indeed their greatest divisor.
 
