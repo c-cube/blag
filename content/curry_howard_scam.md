@@ -88,7 +88,7 @@ I suppose the main type is `compile : C_program -> Option Asm_program`
 or something like that (I'm no expert on Compcert so I could be very wrong).
 However, as far as I know, it's not written in a purely dependent style: proofs are
 separated from the "real code" part of the development. This means
-we don't get $\forall x: \text{C_program} -> Option {y : \text{ASM_program} | R(x,y)}$
+we don't get $\forall x: \text{C_program} \rightarrow Option \set{y : \text{ASM_program} | R(x,y) }$
 where $R(x,y)$ would mean that $x$ and $y$ have the same semantics; rather you
 have `C_program -> ASM_program` and proofs on the side that the function preserves
 its input's semantic.
