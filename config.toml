@@ -19,6 +19,8 @@ build_search_index = true
 default_language = "en"
 
 generate_rss = true
+generate_feed = true
+feed_filename = "rss.xml"
 
 # submodule https://github.com/getzola/hyde into `themes/` dir
 #theme = "hyde"

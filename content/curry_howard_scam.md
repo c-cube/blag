@@ -7,17 +7,6 @@ authors = ["simon"]
 tags = ["logic"]
 +++
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }
-};
-</script>
-
-
 The
 [Curry-Howard correspondence](https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence)
 has been talked about a lot recently, not only in Haskell circles, but also
@@ -30,6 +19,8 @@ $ \forall a. a \rightarrow a $, a trivial theorem of propositional logic.
 
 That's all good and well, but my point here is that _in practice_, the equivalence is
 not as interesting as it first looks.
+
+<!-- more -->
 
 ## Programs are not really proofs
 
@@ -87,7 +78,7 @@ computes the GCD of two numbers and proves that it's indeed their greatest divis
 That said, I don't know of any large program written this way. It's a labor intensive
 way of writing programs, even compared to alternatives like [why3](https://why3.lri.fr/)
 where you can cleanly separate the code and the specification, and ask automatic provers
-to prove as much as possible for you.
+to do as much proving as possible for you.
 
 ## But what about Compcert/SEL4/… ?
 
@@ -111,3 +102,14 @@ The title was click-baity, of course 🙂. But I do think that CH is over-hyped,
 because the correspondence is only interesting abstractly; in practice things
 are either a (interesting) program, or a (interesting) proof, but not both
 at the same time.
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
