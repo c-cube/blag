@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://blag.cedeela.fr"
 
-title = "The Blag — Random Ramblings and Silly Walks"
+title = "The Blag — Logic And Graphics"
 
 # math support
 #katex_enable = true
@@ -47,6 +47,6 @@ even_menu = [
     {url = "https://github.com/vbarrielle", name = "Shuba's github"},
 ]
 
-even_title = "The Blag: Blogging on Logic And Graphics"
+even_title = "The Blag: Logic And Graphics"
 
 # TODO mathjax: https://github.com/getzola/zola/issues/442
