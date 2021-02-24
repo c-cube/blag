@@ -1,11 +1,13 @@
 +++
 date = 2021-02-23
-title = "Curry-Howard is a scam"
+title = "Curry-Howard is overrated"
 slug = "curry-howard-scam"
 [taxonomies]
 authors = ["simon"]
 tags = ["logic"]
 +++
+
+(_original title_: "Curry Howard is a scam". See below.)
 
 The
 [Curry-Howard correspondence](https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence)
@@ -103,8 +105,8 @@ because the correspondence is ~~only~~ mostly interesting abstractly; in practic
 are either a (interesting) program, or a (interesting) proof, but not both
 at the same time.
 
-**edit** (2021-02-24):  I regret the title now. A more appropriate title would
-  be "CH is overrated"; it's obviously still a useful mathematical statement
+**edit** (2021-02-24):  I regret the over-aggressive title now. Changing it to the
+  more appropriate "CH is overrated"; it's obviously still a useful mathematical statement
   and a valid way of building proofs.
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
