@@ -103,6 +103,9 @@ because the correspondence is ~~only~~ mostly interesting abstractly; in practic
 are either a (interesting) program, or a (interesting) proof, but not both
 at the same time.
 
+**edit** (2021-02-24):  I regret the title now. A more appropriate title would
+  be "CH is overrated"; it's obviously still a useful mathematical statement
+  and a valid way of building proofs.
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
