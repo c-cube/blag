@@ -2,8 +2,7 @@
 date = 2015-08-06
 title  = "OCaml Compiler Hacking: how to add a primitive"
 [taxonomies]
-authors = ["simon"]
-tags = ["ocaml","compiler","primitive","C"]
+tags = ["ocaml","compiler","primitive","C","simon"]
 +++
 I have been hacking on the OCaml compiler recently; in particular, I added [some support for coloring warning/error messages](https://github.com/ocaml/ocaml/pull/207). At some point during the discussion over this pull request, it became clear that colored output should only be enabled if `stderr` was an interactive terminal (in opposition to a regular file handle or whatnot). The compiler does not link with the `Unix` library, so I finally decided to add a primitive `caml_sys_is_interactive`. My purpose here is to explain how it works (from what I gathered) and how to do it.
 

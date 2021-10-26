@@ -4,8 +4,7 @@ slug = "test-ocaml"
 date = 2013-10-05
 title = "Test for syntax coloring"
 [taxonomies]
-tags = ["ocaml"]
-authors = ["simon"]
+tags = ["ocaml","simon"]
 +++
 
 # Test for syntax coloring

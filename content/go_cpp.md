@@ -3,8 +3,7 @@ date = 2012-12-18
 title = "Go, C++!!"
 slug = "go-cpp"
 [taxonomies]
-authors = ["shuba"]
-tags = ["c++11"," concurrency"," go"]
+tags = ["c++11"," concurrency"," go","shuba"]
 +++
 I've recently read an [interesting article](http://himmele.blogspot.fr/2012/11/concurrent-hello-world-in-go-erlang.html) which shows an example of concurrency implemented in 3 differenet languages, namely Go, Erlang and C++. While the Erlang and Go examples seemed clear and concise, the C++ one looks long and hard to understand. The reason behind this complexity is that C++ does not provide a simple message passing primitive such as Go channels.
 

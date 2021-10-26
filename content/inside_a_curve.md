@@ -3,8 +3,7 @@ date = 2012-12-05
 title = "The inside of a curve"
 slug = "inside-a-curve"
 [taxonomies]
-authors = ["shuba"]
-tags = ["topology","graphics","2D"]
+tags = ["topology","graphics","2D","shuba"]
 +++
 Hi, I am shuba, and I'll be using this blog to dicuss various computer graphics topics I find interesting. I might also disgress on C++, which is my main programming language.
 

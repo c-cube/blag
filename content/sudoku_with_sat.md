@@ -3,8 +3,7 @@ date = 2019-02-26
 title = "Solving Sudokus with msat"
 slug = "sudoku-msat"
 [taxonomies]
-authors = ["simon"]
-tags = ["ocaml","SAT","msat"]
+tags = ["ocaml","SAT","msat","simon"]
 +++
 The glamorous world of [SAT](https://en.wikipedia.org/wiki/SAT_solver)
 and [SMT solvers](https://en.wikipedia.org/wiki/Satisfiability_modulo_theories)

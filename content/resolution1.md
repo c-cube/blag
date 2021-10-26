@@ -2,8 +2,7 @@
 date = 2014-07-24
 title = "Introduction to Automated Theorem Proving with Logtk"
 [taxonomies]
-tags = ["ocaml","logic","proof","resolution","cnf","logtk"]
-authors = ["simon"]
+tags = ["ocaml","logic","proof","resolution","cnf","logtk","simon"]
 +++
 My PhD work is centered around [automated theorem proving](http://en.wikipedia.org/wiki/Automated_theorem_proving) in [first-order logic](http://en.wikipedia.org/wiki/First-order_logic). This is obviously a very cool topic (otherwise I wouldn't have focused on it), so this post is a crash course (but the program won't crash because I use `OCaml`) on one of the most classic method to prove (some) theorems automatically. I named... *resolution*!
 

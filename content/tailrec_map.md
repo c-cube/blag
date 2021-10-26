@@ -3,8 +3,7 @@ date = 2012-12-03
 title = "Tail-recursive map in OCaml"
 slug = "tail-recursive-map-in-ocaml"
 [taxonomies]
-authors = ["simon"]
-tags  = ["ocaml","unsafe","optimization"]
+tags  = ["ocaml","unsafe","optimization","simon"]
 +++
 The `List.map` function of the OCaml standard lib is not implemented tail-recursively. The current version (as of 4.00 on my computer) is
 

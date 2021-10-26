@@ -3,8 +3,7 @@ date  = 2014-05-02
 title = "Representing Lazy Values"
 slug = "representing-lazy-values"
 [taxonomies]
-authors = ["simon"]
-tags= ["ocaml","lazy","obj","performance"]
+tags= ["ocaml","lazy","obj","performance","simon"]
 +++
 A quick survey of Lazy in OCaml
 ===============================

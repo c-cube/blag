@@ -3,8 +3,7 @@ date = 2021-02-23
 title = "Curry-Howard is overrated"
 slug = "curry-howard-scam"
 [taxonomies]
-authors = ["simon"]
-tags = ["logic"]
+tags = ["logic", "simon"]
 +++
 
 (_original title_: "Curry Howard is a scam". See below.)

@@ -3,8 +3,7 @@ date = 2016-03-20
 title = "Format All the Data Structures"
 slug = "format-all-the-data-structures"
 [taxonomies]
-tags = ["ocaml","printing","format"]
-authors = ["simon"]
+tags = ["ocaml","printing","format","simon"]
 +++
 
 Last October, I moved in Nancy to start working as an engineer with

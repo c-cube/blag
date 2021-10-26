@@ -3,8 +3,7 @@ date = 2014-06-11
 title = "Batch Operations on Collections"
 slug = "batch-operations-on-collections"
 [taxonomies]
-authors = ["simon"]
-tags = ["ocaml","flat_map","collections","performance","batch","gadt"]
+tags = ["ocaml","flat_map","collections","performance","batch","gadt","simon"]
 +++
 Some very common (and useful) operations, including the classic `map`, `filter`, and `flat_map`, traverse their whole argument and return another collection. When several such operations are composed, intermediate collections will be created and become useless immediately after. Languages like Haskell sometimes perform optimizations that *merge* together the operations so as to minimize the number of intermediate collections :
 

@@ -3,8 +3,7 @@ date  = 2014-03-12
 title = "Universal Serialization and Deserialization"
 slug = "universal-serialization-and-deserialization"
 [taxonomies]
-authors = ["simon"]
-tags  = ["ocaml","serializing","json","sexp","GADT"]
+tags  = ["ocaml","serializing","json","sexp","GADT","simon"]
 +++
 **TL;DR**: combinators and GADTs allow to describe types in abstract enough a way that they can be converted into/from various serialization formats.
 

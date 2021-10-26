@@ -3,8 +3,7 @@ date = 2012-11-30
 title = "Debugging with DOT"
 slug = "debug-with-dot"
 [taxonomies]
-tags = ["dot","debug","logic","proof"]
-authors = ["simon"]
+tags = ["dot","debug","logic","proof","simon"]
 +++
 # Rationale
 I'm starting a PhD on first-order automated theorem proving, which is the reason I'm writing an [experimental theorem prover](http://github.com/c-cube/zipperposition/) in OCaml. Theorem provers are full of complicated algorithms (that I plan to write on later), and my usual techniques for debugging are twofold:

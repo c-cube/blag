@@ -3,8 +3,7 @@ date = 2015-03-10
 title = "Simple Refinement Types for OCaml"
 slug = "simple-refinement-types-for-ocaml"
 [taxonomies]
-authors = ["simon"]
-tags =  ["ocaml","types","refinement"]
+tags =  ["ocaml","types","refinement","simon"]
 +++
 For more than one year, vulnerabilies in software (especially pervasive C software) have been disclosed at an alarmingly high rate. I love OCaml, which is definitely safer, but still has gaps left open. I believe formal verification, albeit a very powerful tool, is not mature enough for most programmers (too difficult to use, requires too much efforts), so I'm thinking about alternative solutions that would be more lightweight to define and use, but would still increase the confidence in source code.
 

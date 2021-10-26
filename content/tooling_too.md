@@ -3,8 +3,7 @@ date  = 2015-10-16
 title  = "Tooling is Awesome"
 slug = "tooling-is-awesome"
 [taxonomies]
-authors = ["simon"]
-tags = ["ocaml,merlin,inotify"]
+tags = ["ocaml,merlin,inotify","simon"]
 +++
 A quick note about my current OCaml setup, in my last project, [Nunchaku](https://github.com/nunchaku-inria/nunchaku/).
 

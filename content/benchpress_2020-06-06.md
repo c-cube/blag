@@ -3,8 +3,7 @@ date = 2020-06-06
 title = "Benchpress hacking: log 1"
 slug = "benchpress-hacking-log1"
 [taxonomies]
-authors = ["simon"]
-tags = ["ocaml","benchpress","httpd"]
+tags = ["ocaml","benchpress","httpd","simon"]
 +++
 <link rel="stylesheet" type="text/css" href="/asciinema-player.css"/>
 
