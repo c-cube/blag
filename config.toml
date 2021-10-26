@@ -39,7 +39,7 @@ even_menu = [
     {url = "/rss.xml", name = "RSS feed"},
     #{url = "/categories", name = "Categories"},
     {url = "/tags", name = "Tags"},
-    #{url = "/authors", name = "Authors"},
+    {url = "/authors", name = "Authors"},
     {url = "https://github.com/c-cube", name = "Simon's github"},
     {url = "https://github.com/vbarrielle", name = "Shuba's github"},
 ]
