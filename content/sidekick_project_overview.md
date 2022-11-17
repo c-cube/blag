@@ -1,7 +1,7 @@
 +++
 date = 2022-11-14
-title = "Sidekick project overview"
-slug = "sidekick-project-overview"
+title = "Sidekick project, part 1"
+slug = "sidekick-part-1"
 draft = true
 [taxonomies]
 authors = ["simon"]
@@ -9,7 +9,7 @@ tags = ["ocaml","smt","sidekick"]
 +++
 
 I've been working for years on 
-[sidekick](https://github.com/c-cube/sidekick/), on my free time.
+[sidekick](https://github.com/c-cube/sidekick/).
 It's getting tiresome to put so much effort into a project in the dark, so here's some basic journaling/rambles about it.
 
 So what's Sidekick? At first, and for a while, it was an attempt at writing a
