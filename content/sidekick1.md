@@ -2,7 +2,6 @@
 date = 2022-11-14
 title = "Sidekick project overview"
 slug = "sidekick-project-overview"
-draft = true
 [taxonomies]
 authors = ["simon"]
 tags = ["ocaml","smt","sidekick"]
