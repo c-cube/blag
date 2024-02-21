@@ -4,3 +4,4 @@ public/
 latex.cache
 static/*.js
 static/*.js.map
+*.tmp

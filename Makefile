@@ -4,7 +4,7 @@ build: build-ts
 	@echo "content is in public/"
 
 serve:
-	zola serve
+	zola serve --drafts
 
 TSC_OPTS= 
 #TSC_OPTS= --sourceMap

@@ -4,3 +4,12 @@
 [submodule "themes/even"]
 	path = themes/even
 	url = https://github.com/c-cube/even.git
+[submodule "themes/zola-bearblog"]
+	path = themes/zola-bearblog
+	url = https://codeberg.org/alanpearce/zola-bearblog
+[submodule "themes/dose"]
+	path = themes/dose
+	url = https://github.com/oltdaniel/dose.git
+[submodule "themes/inky"]
+	path = themes/inky
+	url = https://github.com/jimmyff/zola-inky
