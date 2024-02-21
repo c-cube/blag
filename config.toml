@@ -17,7 +17,8 @@ default_language = "en"
 
 generate_rss = true
 generate_feed = true
-feed_filename = "rss.xml"
+feed_filename = "atom.xml"
+#feed_filename = "rss.xml"
 
 # submodule https://github.com/getzola/hyde into `themes/` dir
 #theme = "hyde"
@@ -49,7 +50,7 @@ link_github_username = "c-cube"
 #even_menu = [
 menu_links = [
     {url = "/", name = "Home"},
-    {url = "/rss.xml", name = "RSS feed"},
+    {url = "/atom.xml", name = "Feed"},
     #{url = "/categories", name = "Categories"},
     {url = "/tags", name = "Tags"},
     {url = "/authors", name = "Authors"},
